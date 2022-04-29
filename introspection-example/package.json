@@ -1,0 +1,17 @@
+{
+  "name": "introspection-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:pull": "prisma db pull",
+    "prisma:format": "prisma format",
+    "prisma:seed": "prisma db seed",
+    "prisma:studio": "prisma studio --port 3675"
+  },
+  "dependencies": {
+    "@prisma/client": "3.13.0",
+    "prisma": "^3.13.0"
+  }
+}

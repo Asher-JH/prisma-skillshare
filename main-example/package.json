@@ -1,0 +1,24 @@
+{
+  "name": "main-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:pull": "prisma db pull",
+    "prisma:format": "prisma format",
+    "prisma:seed": "prisma db seed",
+    "prisma:studio": "prisma studio --port 3675",
+    "add:author": "ts-node add-author.ts",
+    "add:post": "ts-node add-post.ts",
+    "add:tag": "ts-node add-tag.ts",
+    "get:authors": "ts-node get-authors.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "3.13.0",
+    "prisma": "^3.13.0"
+  },
+  "devDependencies": {
+    "prisma-erd-generator": "^0.11.0"
+  }
+}

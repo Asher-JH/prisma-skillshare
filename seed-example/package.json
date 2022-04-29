@@ -1,0 +1,26 @@
+{
+  "name": "seed-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:pull": "prisma db pull",
+    "prisma:format": "prisma format",
+    "prisma:seed": "prisma db seed",
+    "prisma:studio": "prisma studio --port 3675",
+    "get:users": "ts-node get-users.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "3.13.0",
+    "prisma": "^3.13.0"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.30",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
